@@ -62,6 +62,7 @@ public class MyTreePanel extends JPanel {
             parent = rootNode;
         }
         treeModel.insertNodeInto(childNode, parent, parent.getChildCount());
+        System.out.println(parent.getChildCount());
         if (shouldBeVisible) {
             jTree.scrollPathToVisible(new TreePath(childNode.getPath()));
         }

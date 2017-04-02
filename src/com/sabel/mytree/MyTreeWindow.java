@@ -85,6 +85,7 @@ public class MyTreeWindow extends JFrame implements ActionListener{
                 break;
             case CLEAR_NODE:
                 myTreePanel.clear();
+                nodeIndex=1;
                 break;
             default: return;
         }
